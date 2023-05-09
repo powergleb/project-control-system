@@ -26,7 +26,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="pcs-api" options="" />
       <module name="pcs-client" options="" />
-      <module name="pcs-core" options="" />
+      <module name="pcs-core" options="--add-modules java.base" />
       <module name="pcs-persistence" options="" />
       <module name="pcs-service" options="" />
     </option>
