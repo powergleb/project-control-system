@@ -27,8 +27,8 @@
       <module name="pcs-api" options="--add-modules java.base" />
       <module name="pcs-client" options="" />
       <module name="pcs-core" options="--add-modules java.base" />
-      <module name="pcs-persistence" options="" />
-      <module name="pcs-service" options="" />
+      <module name="pcs-persistence" options="--add-modules java.base" />
+      <module name="pcs-service" options="--add-modules java.base" />
     </option>
   </component>
 </project>

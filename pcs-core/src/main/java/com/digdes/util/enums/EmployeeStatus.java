@@ -1,4 +1,4 @@
-package com.digdes.util;
+package com.digdes.util.enums;
 
 public enum EmployeeStatus {
     ACTIVE, REMOVED
