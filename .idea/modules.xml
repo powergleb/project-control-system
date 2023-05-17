@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/pcs-api/pcs-api.iml" filepath="$PROJECT_DIR$/pcs-api/pcs-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pcs-app/pcs-app.iml" filepath="$PROJECT_DIR$/pcs-app/pcs-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/pcs-client/pcs-client.iml" filepath="$PROJECT_DIR$/pcs-client/pcs-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/pcs-core/pcs-core.iml" filepath="$PROJECT_DIR$/pcs-core/pcs-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/pcs-persistence/pcs-persistence.iml" filepath="$PROJECT_DIR$/pcs-persistence/pcs-persistence.iml" />

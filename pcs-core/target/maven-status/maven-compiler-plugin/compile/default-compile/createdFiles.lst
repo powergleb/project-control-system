@@ -1,0 +1,10 @@
+com\digdes\pcs\dto\TaskDto.class
+com\digdes\pcs\util\enums\EmployeeStatus.class
+com\digdes\pcs\util\exception\DALException.class
+com\digdes\pcs\util\enums\TaskStatus.class
+com\digdes\pcs\util\exception\BLLException.class
+com\digdes\pcs\util\enums\RoleInTeam.class
+com\digdes\pcs\dto\ProjectDto.class
+com\digdes\pcs\dto\TeamMemberDto.class
+com\digdes\pcs\dto\EmployeeDto.class
+com\digdes\pcs\util\enums\ProjectStatus.class

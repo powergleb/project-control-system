@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="pcs-api" />
+        <module name="pcs-app" />
         <module name="pcs-client" />
         <module name="pcs-service" />
         <module name="pcs-persistence" />
@@ -14,7 +14,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="pcs-api" target="17" />
+      <module name="pcs-app" target="17" />
       <module name="pcs-client" target="17" />
       <module name="pcs-core" target="17" />
       <module name="pcs-persistence" target="17" />
@@ -24,11 +24,11 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="pcs-api" options="--add-modules java.base" />
+      <module name="pcs-app" options="" />
       <module name="pcs-client" options="" />
-      <module name="pcs-core" options="--add-modules java.base" />
-      <module name="pcs-persistence" options="--add-modules java.base" />
-      <module name="pcs-service" options="--add-modules java.base" />
+      <module name="pcs-core" options="" />
+      <module name="pcs-persistence" options="" />
+      <module name="pcs-service" options="" />
     </option>
   </component>
 </project>
