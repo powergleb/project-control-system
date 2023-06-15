@@ -1,0 +1,41 @@
+services:
+  pcs-image:
+    image: 'pcs-image:latest'
+    build:
+      context: .
+    container_name: pcs-container
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5433/pcs-db
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=3355
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=validate
+#    links:
+#      - db
+
+#  postgres:
+#    image: 'postgres:latest'
+#    environment:
+#      - 'POSTGRES_DB=pcs-db'
+#      - 'POSTGRES_PASSWORD=3355'
+#      - 'POSTGRES_USER=postgres'
+#    ports:
+#      - '5432'
+#  rabbitmq:
+#    image: 'rabbitmq:latest'
+#    environment:
+#      - 'RABBITMQ_DEFAULT_PASS=secret'
+#      - 'RABBITMQ_DEFAULT_USER=myuser'
+#    ports:
+#      - '5672'
+#  pgadmin-compose:
+#    image: dpage/pgadmin4
+#    container_name: pgadmin-container
+#    environment:
+#      PGADMIN_DEFAULT_EMAIL: "test@gmail.com"
+#      PGADMIN_DEFAULT_PASSWORD: "3355"
+#    volumes:
+#      - ./docker_postgres_init.sql:/docker-entrypoint-initdb.d/docker_postgres_init.sql
+#    ports:
+#      - "16543:80"
+#    depends_on:
+#      - db

@@ -13,7 +13,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 public class ProjectControlSystemApplication {
     public static void main(String[] args) {
         SpringApplication.run(ProjectControlSystemApplication.class, args);
-        System.out.println("adfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadf");
+
     }
 
 }

@@ -22,9 +22,7 @@ import java.util.UUID;
 
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
-    @Autowired
     private EmployeeRepo employeeRepository;
-    @Autowired
     private PasswordEncoder passwordEncoder;
 
     @Override

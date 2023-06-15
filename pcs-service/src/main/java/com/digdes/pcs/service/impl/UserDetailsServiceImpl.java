@@ -6,6 +6,7 @@ import com.digdes.pcs.persistence.model.Employee;
 import com.digdes.pcs.persistence.repository.EmployeeRepo;
 import jakarta.annotation.PostConstruct;
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -19,6 +20,7 @@ import java.util.Optional;
 @Service
 @AllArgsConstructor
 public class UserDetailsServiceImpl implements UserDetailsService {
+
     private EmployeeRepo employeeRepository;
     private PasswordEncoder passwordEncoder;
 
@@ -26,11 +28,13 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     public UserDetails loadUserByUsername(String login) throws UsernameNotFoundException {
         Employee employee = employeeRepository.findByLoginAndEmployeeStatus(login, EmployeeStatusEnum.ACTIVE)
                 .orElseThrow(() -> new UsernameNotFoundException("User not found"));
+        System.out.println("adfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadf");
         return new User(login, employee.getPassword(), Collections.emptyList());
     }
 
     @PostConstruct
     public void initAdmin() {
+        System.out.println("adfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadfadf");
         Employee employee = new Employee();
         employee.setLastName("admin");
         employee.setName("admin");
