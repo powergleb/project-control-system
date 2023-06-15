@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DatabaseMigrationSettings">
+    <database-infos>
+      <database-info>
+        <option name="enabled" value="true" />
+        <dbms-id>postgres</dbms-id>
+        <mapping-types>
+          <mapping-type sql-type-parameter="Length">
+            <java-class>RoleInTeamEnum</java-class>
+            <sql-type>varchar</sql-type>
+          </mapping-type>
+          <mapping-type sql-type-parameter="Length">
+            <java-class>EmployeeStatusEnum</java-class>
+            <sql-type>varchar</sql-type>
+          </mapping-type>
+          <mapping-type sql-type-parameter="Length">
+            <java-class>ProjectStatusEnum</java-class>
+            <sql-type>varchar</sql-type>
+          </mapping-type>
+          <mapping-type sql-type-parameter="Length">
+            <java-class>TaskStatusEnum</java-class>
+            <sql-type>varchar</sql-type>
+          </mapping-type>
+        </mapping-types>
+      </database-info>
+    </database-infos>
+  </component>
+</project>
