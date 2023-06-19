@@ -18,7 +18,6 @@ import java.util.Collections;
 import java.util.Optional;
 
 @Service
-@AllArgsConstructor
 public class UserDetailsServiceImpl implements UserDetailsService {
 
     private EmployeeRepo employeeRepository;

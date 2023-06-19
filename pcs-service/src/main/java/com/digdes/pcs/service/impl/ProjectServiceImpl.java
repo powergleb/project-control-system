@@ -8,11 +8,12 @@ import com.digdes.pcs.persistence.model.Project;
 import com.digdes.pcs.persistence.repository.ProjectRepo;
 import com.digdes.pcs.service.inteface.ProjectService;
 import com.digdes.pcs.service.mapping.ProjectMapper;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-
+@Service
 public class ProjectServiceImpl implements ProjectService {
     private ProjectRepo projectRepository;
 

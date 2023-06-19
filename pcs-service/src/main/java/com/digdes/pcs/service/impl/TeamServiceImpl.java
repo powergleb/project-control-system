@@ -13,11 +13,13 @@ import com.digdes.pcs.service.inteface.TeamService;
 import com.digdes.pcs.service.mapping.TeamMemberMapper;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class TeamServiceImpl implements TeamService {
     private EmployeeToProjectRepo employeeToProjectRepo;
     private EmployeeRepo employeeRepository;
